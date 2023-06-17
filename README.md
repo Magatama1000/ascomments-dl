@@ -2,8 +2,8 @@
 ASOBISTAGEの配信ライブのアーカイブコメントをダウンロードするツールとそれをニコニココメントxml形式に変換するツールです。  
 ASOBISTAGE Comments Downloader and Converter (to niconico xml)  
   
-<a href="https://github.com/Magatama1000/ascomments-dl/releases">Releases</a>ページにWindows,Linuxの実行可能バイナリを用意しています。  
-Executable binaries for Windows, Linux are available on the <a href="https://github.com/Magatama1000/ascomments-dl/releases">Releases</a> page.  
+このプログラムはpython3によって作成されています。websocketsモジュールが必要です。  
+This program is written by python3. You need the websockets module.  
 
 ## ascomments-dl
 ASOBISTAGEの配信ライブのアーカイブコメントをダウンロードし、そのままの形式でjsonに保存するツールです。  
@@ -36,6 +36,3 @@ asobi2nico [path to ASOBISTAGE comment file]
 ```
 ascomments-dl "cinderella_cg_kagayaki_yomatsuri_day1_comments.json"
 ```
-
-## Other info
-This program is written by python3. You need the websockets module.
