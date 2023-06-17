@@ -1,9 +1,11 @@
 # ascomments-dl
 ASOBISTAGEの配信ライブのアーカイブコメントをダウンロードするツールとそれをニコニココメントxml形式に変換するツールです。  
 このプログラムはpython3によって作成されています。websocketsモジュールが必要です。  
+ニコニココメントxmlファイルはCommeonやNicoConvASSなどのニコニコ関連ソフトと互換性があります。  
   
 ASOBISTAGE Comments Downloader and Converter (to niconico xml)  
 This program is written by python3. You need the websockets module.  
+Niconico comment xml files are compatible with Niconico related software such as Commeon and NicoConvASS.  
 
 ## ascomments-dl
 ASOBISTAGEの配信ライブのアーカイブコメントをダウンロードし、そのままの形式でjsonに保存するツールです。  
