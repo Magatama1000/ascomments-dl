@@ -10,7 +10,7 @@ args = sys.argv
 pageurl = args[1]
 
 def extract_info_from_url(pageurl):
-    pattern = r"https://asobistage.asobistore.jp/event/([^/]+)/archive/day([^/]+)"
+    pattern = r"https://asobistage.asobistore.jp/event/([^/]+)/archive/([^/]+)"
     match = re.match(pattern, pageurl)
     if match:
         eventname = match.group(1)
@@ -52,11 +52,11 @@ async def download():
 print("This is a software that downloads comments from ASOBISTAGE's broadcast live archives.")
 print("The page URL is ",pageurl)
 eventname, day = extract_info_from_url(pageurl)
-uri = "wss://replay.asobistore.jp/"+eventname+"_day"+day+"_ch1/archive"
+uri = "wss://replay.asobistore.jp/"+eventname+"_"+day+"_ch1/archive"
 
 print("Downloading from ",uri)
 
-filename=eventname+"_day"+day+"_comments.json"
+filename=eventname+"_"+day+"_comments.json"
 
 if os.path.exists(filename):
     overwrite = input("File already exists. Do you want to overwrite it? (y/N): ")
